@@ -1,10 +1,17 @@
 
-const apiKey = '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';
+const apiKey = 'PUT_YOUR_API_KEY_HERE';
+
 
 function getSearchQuery() {
     const urlSearchParams = new URLSearchParams(window.location.search);
     const query = urlSearchParams.get('q');
     return query;
+}
+
+function showResult(result) {
+    const documentDiv = document.createElement('div');
+    documentDiv.textContent = result;
+    document.body.appendChild(documentDiv);
 }
 
 async function requestToChatCompletionLegacy(query) {
@@ -54,12 +61,12 @@ async function requestToChatCompletion(query) {
 const promptText = getSearchQuery();
 
 // (async () => {
-//     const response = await requestToChatCompletion(promptText);
-//     console.log(response)
+//     const result = await requestToChatCompletion(promptText);
+//     console.log(result)
 // })();
 
 
-(async () => {
-    const response = await requestToChatCompletionLegacy(promptText);
-    console.log(response)
-})();
+// (async () => {
+//     const response = await requestToChatCompletionLegacy(promptText);
+//     showResult(response);
+// })();

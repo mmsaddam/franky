@@ -1,5 +1,6 @@
 const queryInput = document.getElementById("query-input");
 const submitButton = document.getElementById("submit-button");
+const settingsButton = document.getElementById("settings-button");
 const clearButton = document.getElementById("clear-button");
 const queriesAnswersContainer = document.getElementById("queriesAnswersContainer");
 const showHideWrapper = document.getElementById("show-hide-wrapper");
@@ -128,6 +129,11 @@ submitButton.addEventListener("click", () => {
   document.getElementById("loading-indicator").style.display = "block";
   // Create queriesAnswers array from local storage 
   displayQueriesAnswers();
+});
+
+// Listen for clicks on the settings button
+settingsButton.addEventListener("click", () => {
+  chrome.tabs.create({ url: "options.html" });
 });
 
 // Listen for messages from the background script
