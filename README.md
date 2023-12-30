@@ -2,13 +2,13 @@
 
 ## Overview
 
-This Chrome extension enhances the search experience by integrating OpenAI's chat completion API with Google Search queries. It aims to provide more context-aware and conversational search results.
+This extension allows users to interact with the OpenAI ChatGPT model through a user-friendly interface directly from their Chrome browser. Users can ask questions, choose the ChatGPT model, and manage their prompt history.
 
 ## Features
 
-- **OpenAI Integration:** Utilizes the OpenAI chat completion API for enhanced search queries.
-- **Context-Aware Results:** Leverages chat-based interactions to provide more relevant and context-aware search results.
-- **Additional Features (Optional):** Add any additional features you plan to implement.
+- **Flexible Prompting:** Users can ask ChatGPT anything they wish by typing their queries into the extension's input field.
+- **Model Selection:** Choose from a variety of ChatGPT models to suit your preferences or specific use case.
+- **Prompt History:** View a log of your previous prompts for reference or to revisit past interactions.
 
 ## Installation
 
@@ -33,6 +33,8 @@ Before using the extension, you need to configure your OpenAI API key. Follow th
 
 Obtain an API key from the OpenAI Developer platform.
 
-Open the extension options by right-clicking the extension icon and selecting "Options."
+Click on the extension settings button and save your OpenAI API key.
 
-Replace your OpenAI API key in the designated field and save the changes.
+## Credits
+
+This project is inspired by https://github.com/jessedi0n/openai-chatgpt-chrome-extension
