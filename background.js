@@ -1,9 +1,3 @@
-// // on first install open the options page to set the API key
-// chrome.runtime.onInstalled.addListener(function (details) {
-//     if (details.reason == "install") {
-//         chrome.tabs.create({ url: "options.html" });
-//     }
-// });
 
 // get the current time for context in the system message
 let time = new Date().toLocaleString('en-US');

@@ -3,16 +3,6 @@
     "name": "Frankie",
     "description": "OpenAI based virtual assistant",
     "version": "1.0",
-    "content_scripts": [
-      {
-        "js": [
-          "content_script.js"
-        ],
-        "matches": [
-          "https://www.google.com/*"
-        ]
-      }
-    ],
     "host_permissions": [
       "https://api.openai.com/v1/completions"
     ],
@@ -25,7 +15,7 @@
       "service_worker": "background.js"
     },
     "action": {
-        "default_popup": "popup.html"
+        "default_popup": "popup/popup.html"
     },
-    "options_page": "options.html"
+    "options_page": "options/options.html"
   }
